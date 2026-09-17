@@ -1,14 +1,16 @@
 
 name: Second Workflow
 
-on: push
+on: 
+    push:
+    workflow_dispatch:    
 
 jobs:
   hello-job:
     runs-on: ubuntu-latest
     steps:
       - name: "welcome"
-        run: echo "welcome to github"
+        run: echo "welcome to github mannually "
 
   bye-job:
     runs-on: ubuntu-latest
